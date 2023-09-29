@@ -124,7 +124,7 @@ def getp2Strat(n, j, M):
 
 #run fictitious play for n players for a certain number of iterations.
 # N is the discretization for player 1; M is the discretization for each of players 2-n
-def play(n, A, B, N=201, M=201, iterations=10000, Vprevious=0, VpreviousOpp=-2, saving=False, threshold=0.1):
+def play(n, A, B, N=201, M=201, iterations=10000, Vprevious=0, VpreviousOpp=-2, saving=False, threshold=0.1, number = 0):
     gts = nash.Game(A, B)
 
     np.random.seed(0)
